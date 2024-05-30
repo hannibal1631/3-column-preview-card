@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  width: 60rem;
+  display: flex;
+  flex-direction: row;
+}
+/* sedan */
+.sedan {
+  background-color: var(--Bright-orange);
+  padding: 3rem;
+  border-radius: 0.75rem 0 0 0.75rem;
+}
+.sedan h1 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Big Shoulders Display';
+  color: var(--Very-light-gray-background-headings-buttons);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+.sedan p {
+  margin-bottom: 4.5rem;
+  font-family: 'Lexend Deca';
+  color: var(--Transparent-white-paragraphs);
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+.sedan .btn {
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 5rem;
+  font-family: 'Lexend Deca';
+  color: var(--Bright-orange);
+  font-size: 1rem;
+}
+/* suvs */
+.suvs {
+  background-color: var(--Dark-cyan);
+  padding: 3rem;
+}
+.suvs h1 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Big Shoulders Display';
+  color: var(--Very-light-gray-background-headings-buttons);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+.suvs p {
+  margin-bottom: 4.5rem;
+  font-family: 'Lexend Deca';
+  color: var(--Transparent-white-paragraphs);
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+.suvs .btn {
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 5rem;
+  font-family: 'Lexend Deca';
+  color: var(--Dark-cyan);
+  font-size: 1rem;
+}
+/* luxury */
+.luxury {
+  background-color: var(--Very-dark-cyan);
+  padding: 3rem;
+  border-radius: 0 0.75rem 0.75rem 0;
+}
+.luxury h1 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Big Shoulders Display';
+  color: var(--Very-light-gray-background-headings-buttons);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+.luxury p {
+  margin-bottom: 4.5rem;
+  font-family: 'Lexend Deca';
+  color: var(--Transparent-white-paragraphs);
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+.luxury .btn {
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 5rem;
+  font-family: 'Lexend Deca';
+  color: var(--Very-dark-cyan);
+  font-size: 1rem;
+}
+/* mobile responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+  .sedan {
+    border-radius: 0.75rem 0.75rem 0 0;
+  }
+  .luxury {
+    border-radius: 0 0 0.75rem 0.75rem;
+  }
+}
+/* hover effect */
+.btn:hover {
+  background-color: white;
+  cursor: pointer;
+}
